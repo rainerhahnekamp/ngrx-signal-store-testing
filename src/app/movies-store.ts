@@ -9,7 +9,7 @@ import {withPlayTracking} from "./with-play-tracking";
 
 
 export const MoviesStore = signalStore(
-  {providedIn: 'root'},
+  {providedIn: 'root', protectedState: false},
   withState<State>({
     studio: '',
     movies: [],
